@@ -11,6 +11,7 @@ import Home from './components/Home/Home'
 import Dashboard from './components/Home/Dashboard'
 import Settings from './components/Home/Settings'
 import Account from './components/Account/Account'
+import ContactUs from './components/Contact/ContactUs'
 import Footer from './components/Footer/Footer'
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
                     <Route path="/dashboard" component={Dashboard}/>
                     <Route path="/settings" component={Settings}/>
                     <Route path="/account" component={Account}/>
+                    <Route path="/contact" component={ContactUs}/>
                 </Switch>
             </section>
             <Footer/>

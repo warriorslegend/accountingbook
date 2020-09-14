@@ -1,14 +1,15 @@
 import React from 'react';
+// Libraries
 import { Link } from 'react-router-dom';
 
 export default function NavBar() {
     return (
         <nav className="flex space-between">
             <Link to="/" className="link">
-                <div className="button">Logo</div>
+                <img src="" alt="Project 7"/>
             </Link>
             <Link to="/account" className="link">
-                <div className="button">Cuenta</div>
+                <div>Cuenta</div>
             </Link>
         </nav>
     )
