@@ -84,6 +84,12 @@ nav {
     border-radius: 10px;
 }
 
+/* Padding */
+
+.padding-1em {
+    padding: 1em;
+}
+
 /* Text */
 
 .title {

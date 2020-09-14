@@ -1,10 +1,13 @@
-import React from 'react'
+import React from 'react';
+// Content
+import Panel from '../components/Home/Panel';
+import Dashboard from '../components/Home/Dashboard';
 
 export default function HomePath() {
     return (
         <article className="flex row">
-            <aside className="option-panel">Option panel</aside>
-            <aside>Dashboard</aside>
+            <Panel/>
+            <Dashboard/>
         </article>
-    )
+    );
 }
