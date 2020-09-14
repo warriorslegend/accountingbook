@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 // Libraries
 import { Link } from 'react-router-dom';
+import { AccountTreeOutlined, HomeOutlined, SettingsOutlined, ShowChartOutlined } from '@material-ui/icons'
 // Content
 import ProjectList from '../../database/Projects.json'
 
@@ -18,7 +19,7 @@ export default function Panel() {
                         return (
                             <aside key={project.name}>
                                 <Link to={`/projects/name/${project.name.replace(/ /g, "-")}`} className="link">
-                                    <div className="button">
+                                    <div className="button button-white">
                                         {project.name}
                                     </div>
                                 </Link>
@@ -26,7 +27,7 @@ export default function Panel() {
                         )
                     })}
                     <Link to="/projects/all" className="link">
-                        <div>Ver todo</div>
+                        <div className="button button-white">Ver todo</div>
                     </Link>
                 </aside>
 
@@ -40,15 +41,24 @@ export default function Panel() {
     return (
         <div id="panel">
             <Link to="/" className="link">
-                <div>Inicio</div>
+                <div className="button button-white">
+                    <HomeOutlined className="icon"/>
+                    Inicio
+                </div>
             </Link>
             <Link to="/dashboard" className="link">
-                <div>Dashboard</div>
+                <div className="button button-white">
+                    <ShowChartOutlined className="icon"/>
+                    Dashboard
+                </div>
             </Link>
-            <div className="button" onClick={changeProjectState}>Mis proyectos</div>
+            <div className="button button-white" onClick={changeProjectState}>
+                <AccountTreeOutlined className="icon"/>
+                Mis proyectos
+            </div>
             {<MyProyect/>}
             <Link to="/settings" className="link">
-                <div>Ajustes</div>
+                <div className="button button-white"><SettingsOutlined className="icon"/> Ajustes</div>
             </Link>
         </div>
     )

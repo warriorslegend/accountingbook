@@ -6,7 +6,7 @@ export default function Footer() {
     return (
         <footer className="background-gray-dark white">
             <Link to="/contact" className="link">
-                <div>Contáctanos</div>
+                <span>Contáctanos</span>
             </Link>
         </footer>
     )

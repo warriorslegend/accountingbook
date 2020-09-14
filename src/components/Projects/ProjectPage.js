@@ -1,4 +1,5 @@
 import React from 'react'
+// Libraries
 import { useParams } from 'react-router-dom';
 
 export default function ProjectPage() {
@@ -13,7 +14,9 @@ export default function ProjectPage() {
 
     return (
         <article>
-            <span className="title"><Params/></span>
+            <aside className="flex space-between align-center">
+                <span className="title"><Params/></span>
+            </aside>
         </article>
     )
 }
