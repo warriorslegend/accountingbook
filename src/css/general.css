@@ -69,6 +69,11 @@ nav {
     justify-content: space-between;
 }
 
+.link {
+    text-decoration: inherit;
+    color: inherit;
+}
+
 /* Border Radius */
 
 .radius-6px {
