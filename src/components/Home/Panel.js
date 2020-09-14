@@ -13,15 +13,23 @@ export default function Panel() {
     function MyProyect() {
         if (Project === true) {
             return(
-                ProjectList.map(project => {
-                    return (
-                        <aside key={project.name}>
-                            <div className="button">
-                                {project.name}
-                            </div>
-                        </aside>
-                    )
-                })
+                <aside>
+                    {ProjectList.map(project => {
+                        return (
+                            <aside key={project.name}>
+                                <Link to={`/projects/name/${project.name.replace(/ /g, "-")}`} className="link">
+                                    <div className="button">
+                                        {project.name}
+                                    </div>
+                                </Link>
+                            </aside>
+                        )
+                    })}
+                    <Link to="/projects/all" className="link">
+                        <div>Ver todo</div>
+                    </Link>
+                </aside>
+
             )
         } else {
             return null
