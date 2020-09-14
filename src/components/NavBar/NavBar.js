@@ -7,7 +7,7 @@ export default function NavBar() {
             <Link to="/" className="link">
                 <div className="button">Logo</div>
             </Link>
-            <div className="button">Botones</div>
+            <div className="button">Cuenta</div>
         </nav>
     )
 }
