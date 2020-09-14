@@ -12,6 +12,7 @@ import Dashboard from './components/Home/Dashboard'
 import Settings from './components/Home/Settings'
 import Account from './components/Account/Account'
 import ContactUs from './components/Contact/ContactUs'
+import NotFound from './components/NotFound/NotFound'
 import Footer from './components/Footer/Footer'
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
                     <Route path="/settings" component={Settings}/>
                     <Route path="/account" component={Account}/>
                     <Route path="/contact" component={ContactUs}/>
+                    <Route path="" component={NotFound}/>
                 </Switch>
             </section>
             <Footer/>
