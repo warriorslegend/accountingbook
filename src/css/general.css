@@ -6,6 +6,11 @@ body {
     overflow-x: hidden;
 }
 
+nav {
+    padding: 0.2em 0.4em;
+    border-bottom: 1px solid rgb(184, 184, 184);
+}
+
 /* Content */
 
 .flex {

@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
 
 export default function NavBar() {
     return (
-        <div>
-            Barra de navegación
-        </div>
+        <nav className="flex space-between">
+            <div>Logo</div>
+            <div>Botones</div>
+        </nav>
     )
 }
