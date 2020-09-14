@@ -17,15 +17,15 @@ function App() {
     return (
         <Router>
             <NavBar/>
-            <Switch>
-                <section className="flex row">
-                    <Panel/>
+            <section className="flex row">
+                <Panel/>
+                <Switch>
                     <Route path="/" exact component={Home}/>
                     <Route path="/dashboard" component={Dashboard}/>
                     <Route path="/settings" component={Settings}/>
                     <Route path="/account" component={Account}/>
-                </section>  
-            </Switch>
+                </Switch>
+            </section>
             <Footer/>
         </Router>
     );
