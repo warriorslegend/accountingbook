@@ -6,7 +6,8 @@ import './css/general.css';
 import './css/App.css';
 // Content
 import NavBar from './components/NavBar/NavBar';
-import HomePath from './paths/HomePath';
+import Panel from './components/Home/Panel'
+import Dashboard from './components/Home/Dashboard'
 import Footer from './components/Footer/Footer'
 
 function App() {
@@ -15,7 +16,10 @@ function App() {
             <section>
                 <NavBar/>
                 <Switch>
-                    <Route path="/" exact component={HomePath}/>
+                    <article className="flex row">
+                        <Panel/>
+                        <Route path="/" exact component={Dashboard}/>
+                    </article>  
                 </Switch>
                 <Footer/>
             </section>
