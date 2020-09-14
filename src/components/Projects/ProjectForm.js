@@ -3,7 +3,7 @@ import React from 'react'
 export default function ProjectForm() {
     return (
         <div>
-            Create a project page
+            Create a project.
         </div>
     )
 }

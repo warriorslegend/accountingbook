@@ -22,20 +22,6 @@ article {
     border-radius: 5px;
 }
 
-#panel div:hover {
-    background: #f1f3f5;
-}
-
-.styled-button {
-    padding: 0.5em 0.75em;
-    color: white;
-    background: #0e65c9;
-}
-
-.styled-button:hover {
-    background: #3e7ec7;
-}
-
 /* Provisional */
 
 footer {

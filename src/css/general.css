@@ -33,7 +33,7 @@ nav {
     width: 100%;
 }
 
-.button {
+.click, .button {
     cursor: pointer;
 }
 
@@ -50,7 +50,34 @@ nav {
 }
 
 .border {
-    border: 1px solid rgb(184, 184, 184);;
+    border: 1px solid rgb(184, 184, 184);
+}
+
+.icon {
+    margin-right: 0.25em;
+}
+
+/* Buttons */
+
+.button {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+}
+
+.button-white:hover {
+    background: #f1f3f5;
+}
+
+.button-blue {
+    padding: 0.5em 0.75em;
+    color: white;
+    background: #0e65c9;
+}
+
+.button-blue:hover {
+    background: #3e7ec7;
 }
 
 /* Justify/Align */
@@ -89,6 +116,12 @@ nav {
 
 .padding-1em {
     padding: 1em;
+}
+
+/* Margin */
+
+.margin-right-1em {
+    margin-right: 1em;
 }
 
 /* Text */
