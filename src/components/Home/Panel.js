@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 // Libraries
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { AccountTreeOutlined, HomeOutlined, SettingsOutlined, ShowChartOutlined } from '@material-ui/icons'
 // Content
 import ProjectList from '../../database/Projects.json'
@@ -18,17 +18,17 @@ export default function Panel() {
                     {ProjectList.map(project => {
                         return (
                             <aside key={project.name}>
-                                <Link to={`/projects/name/${project.name.replace(/ /g, "-")}`} className="link">
+                                <NavLink to={`/projects/name/${project.name.replace(/ /g, "-")}`} className="link" activeClassName="link-active">
                                     <div className="button button-white">
                                         {project.name}
                                     </div>
-                                </Link>
+                                </NavLink>
                             </aside>
                         )
                     })}
-                    <Link to="/projects/all" className="link">
+                    <NavLink to="/projects/all" className="link" activeClassName="link-active">
                         <div className="button button-white">Ver todo</div>
-                    </Link>
+                    </NavLink>
                 </aside>
 
             )
@@ -40,26 +40,26 @@ export default function Panel() {
 
     return (
         <div id="panel">
-            <Link to="/" className="link">
+            <NavLink to="/" exact className="link" activeClassName="link-active">
                 <div className="button button-white">
                     <HomeOutlined className="icon"/>
                     Inicio
                 </div>
-            </Link>
-            <Link to="/dashboard" className="link">
+            </NavLink>
+            <NavLink to="/dashboard" className="link" activeClassName="link-active">
                 <div className="button button-white">
                     <ShowChartOutlined className="icon"/>
                     Dashboard
                 </div>
-            </Link>
+            </NavLink>
             <div className="button button-white" onClick={changeProjectState}>
                 <AccountTreeOutlined className="icon"/>
                 Mis proyectos
             </div>
             {<MyProyect/>}
-            <Link to="/settings" className="link">
+            <NavLink to="/settings" className="link" activeClassName="link-active">
                 <div className="button button-white"><SettingsOutlined className="icon"/> Ajustes</div>
-            </Link>
+            </NavLink>
         </div>
     )
 }

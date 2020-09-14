@@ -103,6 +103,11 @@ nav {
     color: inherit;
 }
 
+.link-active {
+    font-weight: bold;
+    color: #0b2f53;
+}
+
 /* Border Radius */
 
 .radius-6px {
