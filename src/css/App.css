@@ -5,3 +5,19 @@
 body {
     font-family: 'Lato';
 }
+
+.option-panel {
+    padding: 1em;
+    border-right: 1px solid rgb(184, 184, 184);
+}
+
+
+/* Provisional */
+
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 0.5em;
+    border-top: 1px solid rgb(184, 184, 184);
+}
