@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 // Libraries
 import { Link } from 'react-router-dom';
 import { Popover } from '@material-ui/core';
-import { AddRounded } from '@material-ui/icons';
+import { AccountCircleOutlined, AddRounded } from '@material-ui/icons';
 
 export default function NavBar() {
 
@@ -35,7 +35,10 @@ export default function NavBar() {
                 </aside>
                 {CreateAProject(id, open, CreateAProjectState, handleClose)}
                 <Link to="/account" className="link">
-                    <div>Cuenta</div>
+                    <div className="button">
+                        <AccountCircleOutlined className="icon"/>
+                        Cuenta
+                    </div>
                 </Link>
             </aside>
         </nav>
