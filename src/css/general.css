@@ -67,6 +67,7 @@ nav {
 
 .space-between {
     justify-content: space-between;
+    justify-items: space-between;
 }
 
 .link {
