@@ -7,22 +7,26 @@ import './css/App.css';
 // Content
 import NavBar from './components/NavBar/NavBar';
 import Panel from './components/Home/Panel'
+import Home from './components/Home/Home'
 import Dashboard from './components/Home/Dashboard'
+import Settings from './components/Home/Settings'
+import Account from './components/Account/Account'
 import Footer from './components/Footer/Footer'
 
 function App() {
     return (
         <Router>
-            <section>
-                <NavBar/>
-                <Switch>
-                    <article className="flex row">
-                        <Panel/>
-                        <Route path="/" exact component={Dashboard}/>
-                    </article>  
-                </Switch>
-                <Footer/>
-            </section>
+            <NavBar/>
+            <Switch>
+                <section className="flex row">
+                    <Panel/>
+                    <Route path="/" exact component={Home}/>
+                    <Route path="/dashboard" component={Dashboard}/>
+                    <Route path="/settings" component={Settings}/>
+                    <Route path="/account" component={Account}/>
+                </section>  
+            </Switch>
+            <Footer/>
         </Router>
     );
 }
