@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 // Libraries
 import { NavLink } from 'react-router-dom';
-import { AccountTreeOutlined, HomeOutlined, SettingsOutlined, ShowChartOutlined } from '@material-ui/icons'
+import { AccountTreeOutlined, HelpOutlineOutlined, HomeOutlined, SettingsOutlined, ShowChartOutlined } from '@material-ui/icons'
 // Content
 import ProjectList from '../../database/Projects.json'
 
@@ -57,8 +57,17 @@ export default function Panel() {
                 Mis proyectos
             </div>
             {<MyProyect/>}
+            <NavLink to="/help" className="link" activeClassName="link-active">
+                <div className="button button-white">
+                    <HelpOutlineOutlined className="icon"/>
+                    Ayuda
+                </div>
+            </NavLink>
             <NavLink to="/settings" className="link" activeClassName="link-active">
-                <div className="button button-white"><SettingsOutlined className="icon"/> Ajustes</div>
+                <div className="button button-white">
+                    <SettingsOutlined className="icon"/>
+                    Ajustes
+                </div>
             </NavLink>
         </div>
     )
