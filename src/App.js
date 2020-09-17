@@ -11,11 +11,11 @@ import Home from './components/Home/Home'
 import Dashboard from './components/Home/Dashboard'
 import ProjectPage from './components/Projects/ProjectPage'
 import MyProjects from './components/Projects/MyProjects'
+import Help from './components/Help/Help'
 import Settings from './components/Home/Settings'
 import Account from './components/Account/Account'
 import ContactUs from './components/Contact/ContactUs'
 import NotFound from './components/NotFound/NotFound'
-import Footer from './components/Footer/Footer'
 
 function App() {
     return (
@@ -28,13 +28,13 @@ function App() {
                     <Route path="/dashboard" component={Dashboard}/>
                     <Route path="/projects/name/:id" children={ProjectPage}/>
                     <Route path="/projects/all" component={MyProjects}/>
+                    <Route path="/help" component={Help}/>
                     <Route path="/settings" component={Settings}/>
                     <Route path="/account" component={Account}/>
                     <Route path="/contact" component={ContactUs}/>
                     <Route path="" component={NotFound}/>
                 </Switch>
             </section>
-            <Footer/>
         </Router>
     );
 }
