@@ -8,6 +8,19 @@ body {
 
 article {
     padding: 1em;
+    position: relative;
+    left: 13em;
+    z-index: 100;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+}
+
+section {
+    position: relative;
+    top: 3.1em;
 }
 
 /* Content */
@@ -15,6 +28,9 @@ article {
 #panel {
     border-right: 1px solid rgb(233, 230, 230);
     padding: 0.5em 0.75em;
+    width: 11.5em;
+    position: fixed;
+    height: 100%;
 }
 
 #panel div {

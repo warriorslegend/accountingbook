@@ -26,7 +26,7 @@ export default function NavBar() {
                     <img src="" alt="Project 7"/>
                 </Link>
             </aside>
-            <aside className="flex align-center">
+            <aside className="flex align-center" style={{marginRight: '1.5em'}}>
                 <aside
                     className="button button-blue border radius-6px margin-right-1em"
                     onClick={handleClick}
